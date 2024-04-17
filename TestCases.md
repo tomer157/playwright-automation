@@ -12,6 +12,8 @@
     date: -- add any date you want in the format of {yyyy-mm-dd}
     },
 
+    ### Assuming task id is auto generated in a database....
+
     now validate that status code is 201
     validate that the returned json has name field with value 'Test'
     validate that the returned json has date field of the date you entered.
