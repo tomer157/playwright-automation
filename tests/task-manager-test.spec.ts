@@ -102,7 +102,7 @@ test("Test Get Request with wrong url ", async ({ request }) => {
 
 // Test - mock internal server error
 test("Test Api with status code 500", async({ page }) => {
-    await page.route('/', route => {
+    await page.route('/tasks', route => {
         route.fulfill({
             status: 500,
             contentType: fixtures.headers['Content-Type'],
